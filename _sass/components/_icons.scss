@@ -1,0 +1,10 @@
+.social-icon {
+    &,
+    &:link {
+        display: inline-block;
+        background-color: $white;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+}
