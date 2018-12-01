@@ -1,0 +1,25 @@
+.header {
+    height: 100vh;
+    background: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__avatar {
+        margin: 0 auto;
+        background-color: black;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+    }
+    &__title {
+        color: $color-primary;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+    &__subtitle {
+        color: $color-primary-light;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+}
