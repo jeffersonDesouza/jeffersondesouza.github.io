@@ -11,7 +11,9 @@
             {% for tec in project.tecs %}
             <li class="project__tecs-item" title="{{tec.name}}">
                 <figure class="project__tec">
-                    <img class="project__tec-img" src="{{tec.img}}" alt="{{tec.name}}">
+                    <div class="project__tec-img-wrapper">
+                        <img class="project__tec-img" src="{{tec.img}}" alt="{{tec.name}}">
+                    </div>
                     <figcaption class="project__tec-img-caption">
                         {{tec.name}}
                     </figcaption>

@@ -30,10 +30,18 @@
             margin-right: 5rem;
         }
     }
-    &__tec {
+    &__tec-fig {
         text-align: center;
     }
+    &__tec-img-wrapper {
+        margin: 0 auto;
+        width: 3rem;
+        height: 3rem;
+    }
     &__tec-img {
+        width: 100%;
+        height: 100%;
+
     }
     &__tec-img-caption {
         text-align: center;
