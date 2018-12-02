@@ -1,0 +1,39 @@
+.projects-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    padding: 1rem;
+    transition: all .5s;
+    &:hover {
+        background-color: $color-secondary;
+        box-shadow: 0 1px 5px $color-secondary;
+        cursor: pointer;
+    }
+    &__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__img {
+        margin: 1rem 0;
+    }
+    &__tecs {
+        display: flex;
+        justify-content: center;
+    }
+    &__tecs-item {
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+    &__tec-img {
+        width: 5rem;
+        height: 5rem;
+    }
+    &__tec-img-caption {
+        text-align: center;
+    }
+}
