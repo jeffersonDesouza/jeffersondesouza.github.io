@@ -1,9 +1,13 @@
 .social-media-nav {
     &__list {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
-    &__list-item {}
+    &__list-item {
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
     &__link {
         &,
         &:link {
