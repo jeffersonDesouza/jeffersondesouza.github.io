@@ -12,12 +12,15 @@
     padding: .5rem;
     background-color: $color-primary;
     height: 9rem;
-    &__nav{
+    &__nav {
         padding: .5rem
     }
-    &__nav-item{
-        &:not(:last-child){
-            margin-right:2rem; 
+    &__nav-item {
+        &:not(:last-child) {
+            margin-right: 2rem;
         }
+    }
+    [class^="icon-"] {
+        color: $white;
     }
 }

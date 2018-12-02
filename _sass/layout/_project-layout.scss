@@ -1,0 +1,65 @@
+.project-layout {
+    &__body {
+        padding: 0 1rem;
+        margin-top: 3rem;
+        height: 80vh;
+        @include respond(tab) {
+            padding: 0 5rem;
+        }
+    }
+    &__details {
+        margin: 2rem auto 0;
+        @include respond(tab) {
+            margin: 2rem 5rem 0;
+        }
+    }
+}
+
+.project-details {
+    &__func {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        @include respond(tab) {
+            display: flex;
+            height: 50vh;
+        }
+    }
+    &__func-demo {
+        margin-bottom: 2rem;
+        text-align: center;
+        @include respond(tab) {
+            flex-grow: 1;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+    }
+    &__func-demo-img {
+        width: 80%;
+    }
+    &__func-tecs {
+        display: flex;
+        justify-content: space-around;
+        @include respond(tab) {
+            flex-direction: column;
+        }
+    }
+    &__tecs-item {
+        display: flex;
+    }
+    &__tec {
+        display: flex;
+        flex-direction: column;
+    }
+    &__tec-img-wrapper {
+        width: 5rem;
+        flex-grow: 1;
+    }
+    &__tec-img {
+        width: 100%;
+    }
+    &__tec-img-caption {
+        text-align: center;
+    }
+}
