@@ -1,10 +1,17 @@
 .header-landing {
-    padding: 1rem 3rem;
-    background: pink;
-    height: 15vh;
+    background: $color-secondary;
+    padding: 1rem 5rem;
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
     &__nav {
+        align-self: flex-end;
         display: flex;
         justify-content: flex-end;
+        margin-right: 3rem;
+    }
+    &__nav-link {
+        font-size: 2rem !important;
     }
     .header-title {
         margin-bottom: 0;

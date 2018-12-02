@@ -13,3 +13,35 @@
 a.social-icon:hover {
     cursor: pointer;
 }
+
+.icon-left-circle:before {
+    content: '\e800';
+}
+
+.icon-pencil:before {
+    content: '\e801';
+}
+
+.icon-left-open:before {
+    content: '\e802';
+}
+
+.icon-left-open-outline:before {
+    content: '\e803';
+}
+
+.icon-twitter:before {
+    content: '\f099';
+}
+
+.icon-github-circled:before {
+    content: '\f09b';
+}
+
+.icon-code:before {
+    content: '\f121';
+}
+
+.icon-linkedin-squared:before {
+    content: '\f30c';
+}

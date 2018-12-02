@@ -1,4 +1,29 @@
 ---
 layout: project-layout
 ---
-project
+
+<div class="project-details">
+    <h3 class="title-secondary">{{page.title}}</h3>
+    <div class="project-details__func">
+        <div class="project-details__func-demo">
+            <img class="project-details__func-demo-img" src="../{{page.demo}}" alt="{{page.altimg}}">
+        </div>
+        <ul class="project-details__func-tecs">
+            {% for tec in page.tecs %}
+            <li class="project-details__tecs-item" title="{{tec.name}}">
+                <figure class="project-details__tec">
+                    <div class="project-details__tec-img-wrapper">
+                        <img class="project-details__tec-img" src="../{{tec.img}}" alt="{{tec.name}}">
+                    </div>
+                    <figcaption class="project-details__tec-img-caption">
+                        {{tec.name}}
+                    </figcaption>
+                </figure>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <p class="text">
+        {{content}}
+    </p>
+</div>
