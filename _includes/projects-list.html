@@ -1,26 +1,28 @@
 <ul class="projects-list">
     {% for project in site.projects %}
     <li class="project">
-        <h2 class="project__title">
-            {{project.title}}
-        </h2>
-        <figure class="project__img">
-            <img src="{{project.img}}" alt="{{project.altimg}}">
-        </figure>
-        <ul class="project__tecs">
-            {% for tec in project.tecs %}
-            <li class="project__tecs-item" title="{{tec.name}}">
-                <figure class="project__tec">
-                    <div class="project__tec-img-wrapper">
-                        <img class="project__tec-img" src="{{tec.img}}" alt="{{tec.name}}">
-                    </div>
-                    <figcaption class="project__tec-img-caption">
-                        {{tec.name}}
-                    </figcaption>
-                </figure>
-            </li>
-            {% endfor %}
-        </ul>
+        <a href="" class="project__link">
+            <h2 class="project__title">
+                {{project.title}}
+            </h2>
+            <figure class="project__img">
+                <img src="{{project.img}}" alt="{{project.altimg}}">
+            </figure>
+            <ul class="project__tecs">
+                {% for tec in project.tecs %}
+                <li class="project__tecs-item" title="{{tec.name}}">
+                    <figure class="project__tec">
+                        <div class="project__tec-img-wrapper">
+                            <img class="project__tec-img" src="{{tec.img}}" alt="{{tec.name}}">
+                        </div>
+                        <figcaption class="project__tec-img-caption">
+                            {{tec.name}}
+                        </figcaption>
+                    </figure>
+                </li>
+                {% endfor %}
+            </ul>
+        </a>
     </li>
     {% endfor %}
 </ul>
