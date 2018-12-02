@@ -5,6 +5,16 @@ body {
     color: $color-primary-dark;
 }
 
+.title-secondary {
+    color: $color-primary-light;
+    font-size: 2rem;
+}
+
+.text {
+    color: $color-primary-light;
+    font-size: 1.4rem;
+}
+
 @font-face {
     font-family: 'jefferson-portifolio-icons';
     src: url('../font/jefferson-portifolio-icons.eot?72774099');
@@ -43,4 +53,3 @@ body {
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-

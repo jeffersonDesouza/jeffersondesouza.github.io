@@ -1,7 +1,7 @@
 .project-layout {
     &__body {
         padding: 3rem 5rem;
-        height: 75vh;
+        height: 80vh;
     }
     &__details {
         margin: 2rem 5rem 0;
@@ -12,6 +12,8 @@
     &__func {
         display: flex;
         height: 50vh;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
     &__func-demo {
         flex-grow: 1;
@@ -27,7 +29,6 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    &__tec {}
     &__tec-img-wrapper {
         width: 5rem;
     }

@@ -1,9 +1,13 @@
 .header-landing {
     background: $color-secondary;
     padding: 1rem 5rem;
-    height: 16vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
+    &__brand {
+        display: flex;
+        flex-direction: column;
+    }
     &__nav {
         align-self: flex-end;
         display: flex;
@@ -11,14 +15,15 @@
         margin-right: 3rem;
     }
     &__nav-link {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
     }
     .header-title {
         margin-bottom: 0;
+        font-size: 2.5rem;
     }
     .header-subtitle {
-        text-align: left;
-        margin-left: 12.5rem;
+        font-size: 1.3rem;
         margin-bottom: 0;
+        align-self: flex-end;
     }
 }
