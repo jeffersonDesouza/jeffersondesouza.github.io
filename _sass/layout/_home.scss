@@ -1,0 +1,16 @@
+.home {
+    @include respond(tab) {
+        display: flex;
+    }
+    &__header {
+        background-color: $color-secondary;
+        @include respond(tab) {
+            width: 40%;
+        }
+    }
+    &__projects {
+        @include respond(tab) {
+            width: 60%;
+        }
+    }
+}
