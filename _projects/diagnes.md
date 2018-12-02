@@ -9,4 +9,4 @@ tecs:
     - { img: assets/img/pouchdb.svg, name: Pouchdb}
     - { img: assets/img/jquery.svg, name: jquery}
 ---
-Encurtador de Links
+Sistema de gestão de clinicas hospitalares.

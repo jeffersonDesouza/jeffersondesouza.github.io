@@ -9,4 +9,4 @@ tecs:
     - { img: assets/img/ngrx.svg, name: NgRx}
     - { img: assets/img/sass.svg, name: SCSS}
 ---
-Projeto de gestãode tecnologia
+Sistema de gestão de projetos de TI, possibilitando o controle no fluxo de tarefas e gestão geral de projetos baseados no Scrum.

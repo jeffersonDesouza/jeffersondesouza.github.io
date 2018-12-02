@@ -23,7 +23,6 @@
         @include respond(phone) {}
         @include respond(tab) {
             display: flex;
-            height: 50vh;
         }
     }
     &__func-demo {
@@ -38,12 +37,15 @@
         }
     }
     &__func-demo-img {
-        width: 80%;
+        width: 100%;
     }
     &__func-tecs {
         display: flex;
         justify-content: space-around;
         @include respond(tab) {
+            border-left: 1px solid $color-secondary-dark;
+            margin-left:3rem;
+            padding: 0 3rem;
             flex-direction: column;
         }
     }
