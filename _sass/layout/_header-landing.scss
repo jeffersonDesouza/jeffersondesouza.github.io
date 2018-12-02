@@ -30,7 +30,7 @@
         align-self: flex-end;
         margin-top: 1rem;
         z-index: 1500;
-        position: fixed;
+        position: absolute;
         top: 2rem;
         right: 2rem;
         @include respond(tab-port) {
