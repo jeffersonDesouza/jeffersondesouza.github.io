@@ -1,7 +1,7 @@
 <header class="header-landing" role="banner">
   <section class="header-landing__brand">
     <a href="/">
-    <h1 class="header-title">
+      <h1 class="header-title">
         {{ site.title }}
       </h1>
     </a>
@@ -9,7 +9,14 @@
       {{ site.subtitle }}
     </h2>
   </section>
-  <nav class="header-landing__nav">
-    <a href="/" class="header-landing__nav-link">Página Inicial</a>
-  </nav>
+  <section class="header-landing__navigation">
+    <input type="checkbox" class="header-landing__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="header-landing__navigation-button">
+      <span class="header-landing__navigation-icon">&nbsp;</span>
+    </label>
+
+    <nav class="header-landing__navigation-nav">
+      <a href="/" class="header-landing__navigation-link">Página Inicial</a>
+    </nav>
+  </section>
 </header>
