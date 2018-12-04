@@ -2,7 +2,7 @@
 layout: project
 title: ScrumGo
 img: assets/img/scrumgo.png
-demo: assets/img/scrumgo.png
+demo: assets/img/scrumgo-demo.png
 altimg: Imagem do sitema ScrumGo mostrando detalhes da página de gerenciamente de projetos
 tecs: 
     - { img: assets/img/angular.svg, name: Angular}
