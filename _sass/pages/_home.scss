@@ -1,0 +1,49 @@
+.home-page {
+  background-color: $color-secondary;
+  min-height: 100vh;
+  display: flex;
+}
+
+.header {
+  background-color: $color-primary;
+  color: $white;
+  flex: 1;
+  position: relative;
+  &__info {
+    position: fixed;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+.summary {
+  background: pink;
+  padding: 3rem;
+
+  &--home-page{
+    transition: all .3s;
+    animation: from-left .3s ease-out .5s;
+  }
+}
+
+.projects {
+  background-color: $color-primary-light;
+  display: flex;
+  flex: 2;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__list-item {
+    margin: 3rem;
+  }
+}
+
+.project {
+  width: 35rem;
+  height: 35rem;
+  background-color: lightblue;
+}

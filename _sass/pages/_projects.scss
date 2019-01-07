@@ -1,0 +1,22 @@
+.project-page {
+  background-color: $color-secondary;
+  min-height: 100vh;
+  display: flex;
+  &__header {
+    background-color: $color-primary;
+    color: $white;
+    position: relative;
+    transition: all .3s;
+    animation: project-page-init-header .5s ease-out;
+  }
+  &__header-info {
+    position: fixed;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  &__details {
+    flex: 4;
+  }
+}
