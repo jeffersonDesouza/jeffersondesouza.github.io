@@ -1,17 +1,18 @@
 .social-media-nav {
-    &__list {
-        display: flex;
-        justify-content: center;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 1rem;
     }
-    &__list-item {
-        &:not(:last-child) {
-            margin-right: 1rem;
-        }
+  }
+  &__link {
+    &,
+    &:link {
+      color: $color-primary-dark;
+      font-size: 2.5rem;
     }
-    &__link {
-        &,
-        &:link {
-            font-size: 2.5rem;
-        }
-    }
+  }
 }

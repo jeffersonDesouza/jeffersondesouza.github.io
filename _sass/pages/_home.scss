@@ -19,10 +19,10 @@
 }
 
 .summary {
-  background: pink;
-  padding: 3rem;
-
-  &--home-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &--home-page {
     transition: all .3s;
     animation: from-left .3s ease-out .5s;
   }

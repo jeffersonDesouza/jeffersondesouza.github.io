@@ -1,0 +1,20 @@
+.profile {
+  margin-bottom: 3rem;
+  &__figure {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  &__avatar-img {
+    border-radius: 100%;
+  }
+  &__title {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+  }
+  &__subtitle {
+    font-size: 2rem;
+    text-align: center;
+    color: $color-primary-mid;
+  }
+}
