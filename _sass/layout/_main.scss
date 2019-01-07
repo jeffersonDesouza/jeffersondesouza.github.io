@@ -8,6 +8,15 @@
   background-color: $color-primary;
   color: $white;
   flex: 1;
+  position: relative;
+  &__info {
+    position: fixed;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: pink;
+  }
 }
 
 .projects {
