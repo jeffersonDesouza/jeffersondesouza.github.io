@@ -1,0 +1,14 @@
+<section class="projects">
+  <ul class="projects__list">
+    {% for project in site.projects %}
+    <li class="projects__list-item">
+      <a href="{{project.url}}" class="project__link">
+        <div class="project">
+          project 1
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>

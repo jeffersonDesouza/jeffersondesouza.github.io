@@ -6,12 +6,12 @@
     background-color: $color-primary;
     color: $white;
     position: relative;
+    width: auto;
     transition: all .3s;
+    flex: 0 0 15%;
     animation: project-page-init-header .5s ease-out;
   }
   &__header-info {
-    position: fixed;
-    width: 33.33%;
     display: flex;
     justify-content: center;
     height: 100vh;

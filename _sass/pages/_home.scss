@@ -9,6 +9,9 @@
   color: $white;
   flex: 1;
   position: relative;
+  transition: all .3s;
+
+  animation: home-page-init-header .3s ease-out;
   &__info {
     position: fixed;
     width: 33.33%;
@@ -24,18 +27,21 @@
   justify-content: center;
   &--home-page {
     transition: all .3s;
-    animation: from-left .3s ease-out .5s;
+    animation: from-left .3s ease-out;
   }
 }
 
 .projects {
   background-color: $color-primary-light;
-  display: flex;
   flex: 2;
+  display: flex;
+  justify-content: center;
   &__list {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    flex: 0 0 90%;
   }
   &__list-item {
     margin: 3rem;
