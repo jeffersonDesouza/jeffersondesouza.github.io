@@ -10,7 +10,6 @@
   flex: 1;
   position: relative;
   transition: all .3s;
-
   animation: home-page-init-header .3s ease-out;
   &__info {
     position: fixed;
@@ -25,9 +24,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
   &--home-page {
-    transition: all .3s;
-    animation: from-left .3s ease-out;
+    transition: all .3s; 
+    animation: from-left .3s;
   }
 }
 

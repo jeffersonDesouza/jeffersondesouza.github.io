@@ -9,18 +9,28 @@
     border-radius: 100%;
   }
   &__title {
-    font-size: 3rem;
     margin-bottom: .5rem;
+    &--home {
+      font-size: 3rem;
+      animation: profile-home-title .3s;
+    }
     &--project {
       font-size: 2rem;
+      animation: profile-project-title .3s;
     }
   }
   &__subtitle {
-    font-size: 2rem;
     text-align: center;
     color: $color-primary-mid;
+    transition: all .3s;
+    &--home {
+      font-size: 2rem;
+      animation: profile-home-sub .3s;
+    }
     &--project {
       font-size: 1.5rem;
+      animation: profile-project-sub .3s;
     }
   }
+ 
 }
