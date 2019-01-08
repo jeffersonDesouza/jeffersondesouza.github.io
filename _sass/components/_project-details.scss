@@ -13,13 +13,16 @@
     }
   }
   &__body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     @include respond(tab-land) {
       width: 60rem;
     }
   }
   &__demo {
+    img {
+      width: 100%;
+    }
     @include respond(tab-land) {
       display: flex;
       justify-content: center;

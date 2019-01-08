@@ -6,9 +6,12 @@ layout: project-details
     <h2 class="project-details__title"><a href="{{page.link}}" target="_blanck">{{page.title}}</a></h2>
     <div class="project-details__body">
         <figure class="project-details__demo">
-            <div class="project-details__demo-img">
-                <img srcset="../{{page.demo}}" alt="">
-            </div>
+
+            <picture class="project-details__demo">
+                <source srcset="../{{page.demo}}, ../{{page.img}}" media="(min-width: 31.25em)">
+                <img srcset="../{{page.img}}, ../{{page.demo}}" src="../{{page.img}}">
+            </picture>
+
             <ul class="project-details__tecs">
                 {% for tec in page.tecs %}
                 <li class="project-details__tec">
