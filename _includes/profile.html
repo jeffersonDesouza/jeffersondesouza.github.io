@@ -1,15 +1,17 @@
 <div class="profile profile--home">
-  <figure class="profile__figure">
-    <img class="profile__avatar-img" src="assets/img/lg/avatar-lg.png" alt="">
-  </figure>
-  <h1 class="profile__title profile__title--home">
-    {{ site.title }}
-  </h1>
-  <p class="profile__subtitle profile__subtitle--home">
-    {{ site.subtitle }}
-  </p>
-  <div class="profile__social-media">
-    {%- include social-media-nav.html -%}
+  <div class="profile__body">
+    <figure class="profile__figure">
+      <img class="profile__avatar-img" src="assets/img/lg/avatar-lg.png" alt="">
+    </figure>
+    <h1 class="profile__title profile__title--home">
+      {{ site.title }}
+    </h1>
+    <p class="profile__subtitle profile__subtitle--home">
+      {{ site.subtitle }}
+    </p>
+    <div class="profile__social-media">
+      {%- include social-media-nav.html -%}
+    </div>
   </div>
   <footer class="profile__footer profile__footer--home">
     <div class="profile__social-email">
