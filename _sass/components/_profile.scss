@@ -19,6 +19,10 @@
       font-size: 2rem;
       animation: profile-project-title .3s;
     }
+    a {
+      color: inherit;
+      font-size: inherit;
+    }
   }
   &__subtitle {
     text-align: center;
@@ -33,6 +37,10 @@
       font-size: 1.5rem;
       animation: profile-project-sub .3s;
     }
+    a {
+      color: inherit;
+      font-size: inherit;
+    }
   }
   &__social-media {
     padding-bottom: 10rem;
@@ -41,9 +49,11 @@
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-    
-    &--home{
+    &--home {
       font-size: 1.4rem;
     }
+  }
+  ::selection{
+    background: $white;
   }
 }

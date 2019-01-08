@@ -1,17 +1,23 @@
 <div class="profile">
   <figure class="profile__figure ">
-    <img class="profile__avatar-img" src="../{{'assets/img/lg/avatar-sm.png'}}" alt="">
+    <a href="/">
+      <img class="profile__avatar-img" src="../{{'assets/img/lg/avatar-sm.png'}}" alt="">
+    </a>
   </figure>
   <h1 class="profile__title profile__title--project">
-    {{ site.title }}
+    <a href="/">
+      {{ site.title }}
+    </a>
   </h1>
   <p class="profile__subtitle profile__subtitle--project">
-    {{ site.subtitle }}
+    <a href="/">
+      {{ site.subtitle }}
+    </a>
   </p>
   <div class="profile__social-media">
     {%- include social-media-nav.html -%}
   </div>
   <footer class="profile__footer profile__footer--project ">
-    jeffersondesouzacordel&#64;gemail.com
+    {{site.email}}
   </footer>
 </div>

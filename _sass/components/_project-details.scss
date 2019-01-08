@@ -6,8 +6,9 @@
     margin-bottom: 2rem;
     a {
       font-size: 2.2rem;
+      color: $color-primary-dark;
       &:hover {
-        color: red;
+        color: $color-primary-mid;
       }
     }
   }
