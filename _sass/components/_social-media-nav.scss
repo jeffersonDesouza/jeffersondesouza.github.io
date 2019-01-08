@@ -11,7 +11,7 @@
   &__link {
     &,
     &:link {
-      color: $color-primary-dark;
+      color: $color-primary-mid;
       font-size: 4rem;
       @include respond(desktop) {
         font-size: 2.5rem;

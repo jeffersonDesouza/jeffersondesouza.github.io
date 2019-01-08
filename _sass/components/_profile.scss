@@ -2,12 +2,19 @@
   @include abs-midle-center;
   flex: 1;
   &__body {
-    flex: 4;
     font-size: 1.75rem;
+    @include abs-midle-center;
     @include respond(desktop) {
       font-size: 2rem;
     }
+    background: lightblue;
+    flex: 0 0 80%;
+  }
+  &__footer {
     @include abs-midle-center;
+    background: pink;
+    justify-content: flex-start;
+    flex: 0 0 20%;
   }
   &__figure {
     display: flex;
@@ -71,10 +78,6 @@
   }
   &__social-email {
     font-size: 1.75rem;
-  }
-  &__footer {
-    @include abs-midle-center;
-    justify-content: flex-start;
   }
   &__projects-link {
     transform: rotateZ(270deg);
