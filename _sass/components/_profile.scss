@@ -4,20 +4,32 @@
   &__body {
     font-size: 1.75rem;
     @include abs-midle-center;
+    flex: 0 0 75%;
     @include respond(tab) {
       font-size: 2rem;
     }
-    flex: 0 0 75%;
   }
   &__footer {
     @include abs-midle-center;
     justify-content: flex-start;
     flex: 0 0 25%;
+    &--project {
+      display: none;
+      @include respond(tab) {
+        display: block;
+      }
+    }
   }
   &__figure {
     display: flex;
     justify-content: center;
     margin-bottom: 1.5rem;
+    &--project {
+      display: none;
+      @include respond(tab) {
+        display: flex;
+      }
+    }
   }
   &__avatar-img {
     border-radius: 100%;
@@ -27,15 +39,18 @@
     text-align: center;
     &--home {
       font-size: 3rem;
-      animation: profile-home-title .3s;
       @include respond(tab) {
+        animation: profile-home-title .3s;
+        font-size: 2.5rem;
+      }
+      @include respond(tab-land) {
         font-size: 3rem;
       }
     }
     &--project {
       font-size: 2rem;
-      animation: profile-project-title .3s;
       @include respond(tab) {
+        animation: profile-project-title .3s;
         font-size: 2rem;
       }
     }
@@ -51,15 +66,15 @@
     margin-bottom: 3rem;
     &--home {
       font-size: 2rem;
-      animation: profile-home-sub .3s;
       @include respond(tab) {
+        animation: profile-home-sub .3s;
         font-size: 2rem;
       }
     }
     &--project {
       font-size: 2.5rem;
-      animation: profile-project-sub .3s;
       @include respond(tab) {
+        animation: profile-project-sub .3s;
         font-size: 1.5rem;
       }
     }
@@ -70,12 +85,14 @@
   }
   &__social-media {
     margin-bottom: 3rem;
+    display: none;
     @include respond(tab) {
-      padding-bottom: 10rem;
+      margin-bottom: 0;
+      display: block;
     }
   }
   &__social-email {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
   }
   &__projects-link {
     transform: rotateZ(270deg);

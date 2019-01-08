@@ -39,9 +39,11 @@
     justify-content: center;
   }
   &__list {
-    @include respond(tab) {
-      display: flex;
-      justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(md-lap) {
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: flex-start;
       flex: 0 0 90%;

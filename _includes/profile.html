@@ -1,8 +1,15 @@
 <div class="profile profile--home">
   <div class="profile__body">
-    <figure class="profile__figure">
-      <img class="profile__avatar-img" src="assets/img/lg/avatar-lg.png" alt="">
-    </figure>
+    <picture class="profile__figure">
+      <source 
+        srcset="assets/img/lg/avatar-sm.png, assets/img/lg/avatar-lg.png" 
+        media="(min-width: 48em)">
+      <img class="profile__avatar-img" 
+        srcset="assets/img/lg/avatar-sm.png, assets/img/lg/avatar-lg.png"
+        src="assets/img/lg/avatar-lg.png">
+    </picture>
+
+
     <h1 class="profile__title profile__title--home">
       {{ site.title }}
     </h1>
