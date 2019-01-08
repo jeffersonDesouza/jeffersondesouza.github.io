@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Chaordic
-img: assets/img/chaordic.png
-demo: assets/img/chaordic-demo.gif
+img: assets/img/demos/chaordic-1x.png
+demo: assets/img/demos/chaordic-2x.png
 
 altimg: Imagem do encurtador de links Chaordic
 tecs: 

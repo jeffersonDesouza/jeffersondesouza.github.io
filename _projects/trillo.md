@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Trillo
-img: assets/img/trillo.png
-demo: assets/img/trillo-demo.gif
+img: assets/img/demos/trillo-1x.png
+demo: assets/img/demos/trillo-2x.gif
 altimg: Imagem do encurtador de links Chaordic
 tecs: 
     - { img: html, name: HTML}

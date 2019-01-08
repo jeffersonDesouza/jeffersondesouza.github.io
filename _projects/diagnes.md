@@ -1,8 +1,8 @@
 ---
 layout: project
 title: Diagnes, Gestão de Pacientes
-img: assets/img/diagnes.png
-demo: assets/img/diagnes.png
+img: assets/img/demos/diagnes-1x.png
+demo: assets/img/demos/diagnes-2x.png
 altimg: Imagem do encurtador de links Chaordic
 tecs: 
     - { img: electron, name: Electron}
