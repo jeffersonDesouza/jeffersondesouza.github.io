@@ -62,3 +62,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 }
 
+@mixin abs-midle-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

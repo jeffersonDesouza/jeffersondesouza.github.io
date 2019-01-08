@@ -9,7 +9,7 @@
   color: $white;
   flex: 1;
   position: relative;
-  transition: all .3s;
+  transition: all .3s ease-out;
   animation: home-page-init-header .3s ease-out;
   &__info {
     position: fixed;

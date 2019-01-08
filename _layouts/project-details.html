@@ -4,44 +4,7 @@ layout: default
 
 
 <div class="project-page">
-        {%- include project-page-header.html -%}
-
-    <section class="project-page__details">
-        <h2>Projeto tal</h2>
-        <div>
-            <figure>
-                imagem
-                <img src="" alt="">
-                <figcaption>
-                    <div>tec</div>
-                    <div>tec</div>
-                    <div>tec</div>
-                </figcaption>
-            </figure>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam impedit similique nulla quam
-                    necessitatibus odit temporibus dicta odio nemo enim totam sunt libero, ea maxime corrupti doloribus
-                    accusamus blanditiis!
-                </p>
-            </div>
-        </div>
-    </section>
+    {%- include project-page-header.html -%}
+    {{content}}
 </div>
 
-
-
-<!-- 
-<div class="project-layout">
-    <header>
-        {%- include header-landing.html -%}
-    </header>
-    <div class="project-layout__body">
-        <nav class="project-layout__nav">
-            <a href="/"><i class=" icon-left-open"></i></a>
-        </nav>
-        <div class="project-layout__details">
-            {{ content }}
-        </div>
-    </div>
-</div> -->
