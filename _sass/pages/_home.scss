@@ -1,50 +1,67 @@
 .home-page {
   background-color: $color-secondary;
   min-height: 100vh;
-  display: flex;
+  @include respond(desktop) {
+    display: flex;
+  }
 }
 
 .header {
   background-color: $color-primary;
+  
   color: $white;
-  flex: 1;
-  position: relative;
-  transition: all .3s ease-out;
-  animation: home-page-init-header .3s ease-out;
+  @include respond(desktop) {
+    flex: 1;
+    position: relative;
+    transition: all .3s ease-out;
+    animation: home-page-init-header .3s ease-out;
+  }
   &__info {
-    position: fixed;
-    width: 33.33%;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
+    @include respond(desktop) {
+      position: fixed;
+      flex-direction: row;
+      width: 33.33%;
+      height: 100vh;
+    }
   }
 }
 
-.summary {
+/* .summary {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  @include respond(desktop) {
+  }
   &--home-page {
-    transition: all .3s; 
-    animation: from-left .3s;
+    @include respond(desktop) {
+      transition: all .3s;
+      animation: from-left .3s;
+    }
   }
 }
-
+ */
 .projects {
   background-color: $color-primary-light;
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  &__list {
+  @include respond(desktop) {
+    flex: 2;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex: 0 0 90%;
+    justify-content: center;
+  }
+  &__list {
+    @include respond(desktop) {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex: 0 0 90%;
+    }
   }
   &__list-item {
     margin: 3rem;
   }
 }
-
