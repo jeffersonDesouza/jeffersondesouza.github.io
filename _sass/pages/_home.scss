@@ -1,0 +1,50 @@
+.home-page {
+  background-color: $color-secondary;
+  min-height: 100vh;
+  display: flex;
+}
+
+.header {
+  background-color: $color-primary;
+  color: $white;
+  flex: 1;
+  position: relative;
+  transition: all .3s ease-out;
+  animation: home-page-init-header .3s ease-out;
+  &__info {
+    position: fixed;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  &--home-page {
+    transition: all .3s; 
+    animation: from-left .3s;
+  }
+}
+
+.projects {
+  background-color: $color-primary-light;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 0 0 90%;
+  }
+  &__list-item {
+    margin: 3rem;
+  }
+}
+

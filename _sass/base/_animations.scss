@@ -1,3 +1,74 @@
-body{
-    background-color:pink;
+@keyframes from-left {
+  0% {
+    transform: translateX(-10rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes home-page-init-header {
+  0% {
+    position: relative;
+    flex: 0 0 15%;
+  }
+  100% {
+    flex: 0 0 33.33%;
+    position: relative;
+  }
+}
+
+@keyframes project-page-init-header {
+  0% {
+    flex: 0 0 33.33%;
+  }
+  100% {
+    flex: 0 0 15%;
+  }
+}
+
+@keyframes profile-home-title {
+  0% {
+    font-size: 2rem;
+    
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
+
+@keyframes profile-home-sub {
+  0% {
+    font-size: 1.5rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+
+@keyframes profile-project-title {
+  0% {
+    font-size: 3rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+
+@keyframes profile-project-sub {
+  0% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes project-back-rotate{
+  0% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
 }

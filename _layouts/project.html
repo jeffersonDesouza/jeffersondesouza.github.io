@@ -1,29 +1,26 @@
 ---
-layout: project-layout
+layout: project-details
 ---
 
-<div class="project-details">
-    <h3 class="title-secondary">{{page.title}}</h3>
-    <div class="project-details__func">
-        <div class="project-details__func-demo">
-            <img class="project-details__func-demo-img" src="../{{page.demo}}" alt="{{page.altimg}}">
-        </div>
-        <ul class="project-details__func-tecs">
-            {% for tec in page.tecs %}
-            <li class="project-details__tecs-item" title="{{tec.name}}">
-                <figure class="project-details__tec">
-                    <div class="project-details__tec-img-wrapper">
-                        <img class="project-details__tec-img" src="../{{tec.img}}" alt="{{tec.name}}">
-                    </div>
-                    <figcaption class="project-details__tec-img-caption">
-                        {{tec.name}}
-                    </figcaption>
-                </figure>
-            </li>
+<section class="project-details">
+    <h2 class="project-details__title"><a href="{{page.link}}" target="_blanck">{{page.title}}</a></h2>
+    <div class="project-details__body">
+        <figure class="project-details__demo">
+            <div class="project-details__demo-img">
+                <img srcset="../{{page.demo}}" alt="">
+            </div>
+            <ul class="project-details__tecs">
+                {% for tec in page.tecs %}
+                <li class="project-details__tec">
+                    {% include {{ tec.img | prepend: 'svg/' | append: '.svg' }} %}
+                </li>
+                {% endfor %}
+            </ul>
+        </figure>
+        <div class="project-details__destails">
+            {% for destail in page.destails %}
+            <p class="project-details__paragraph">{{destail}}</p>
             {% endfor %}
-        </ul>
+        </div>
     </div>
-    <div class="text project-details__description">
-        {{content}}
-    </div>
-</div>
+</section>

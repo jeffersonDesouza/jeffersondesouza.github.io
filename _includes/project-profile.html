@@ -1,0 +1,23 @@
+<div class="profile">
+  <figure class="profile__figure ">
+    <a href="/">
+      <img class="profile__avatar-img" src="../{{'assets/img/lg/avatar-sm.png'}}" alt="">
+    </a>
+  </figure>
+  <h1 class="profile__title profile__title--project">
+    <a href="/">
+      {{ site.title }}
+    </a>
+  </h1>
+  <p class="profile__subtitle profile__subtitle--project">
+    <a href="/">
+      {{ site.subtitle }}
+    </a>
+  </p>
+  <div class="profile__social-media">
+    {%- include social-media-nav.html -%}
+  </div>
+  <footer class="profile__footer profile__footer--project ">
+    {{site.email}}
+  </footer>
+</div>
