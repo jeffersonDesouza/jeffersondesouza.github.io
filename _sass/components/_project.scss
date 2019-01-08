@@ -12,6 +12,8 @@
   &__figure {
     height: 17.5rem;
     overflow: hidden;
+    background-color: rgba( $color-primary-mid, .3);
+
   }
   &__figure-img {
     transition: all .5s ease-out;

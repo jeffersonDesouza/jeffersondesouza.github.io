@@ -22,6 +22,9 @@
   }
   &__demo-img {
     margin-right: 3rem;
+    min-width: 43rem;
+    min-height: 18rem;
+    background-color: rgba( $color-primary-mid, .3);
   }
   &__tecs {
     display: flex;
