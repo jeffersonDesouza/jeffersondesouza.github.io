@@ -21,12 +21,14 @@
     position: fixed;
     height: 100vh;
   }
-  &__back {
-    align-self: stretch;
+  &__back { 
+    animation: project-back-rotate .3s ease-out;
     .icon {
       font-size: 2rem;
       color: $white;
     }
+  }
+  &__back-link {
   }
   &__profile {
     flex: 1;

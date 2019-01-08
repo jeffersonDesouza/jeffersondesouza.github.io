@@ -63,3 +63,12 @@
     font-size: 1.5rem;
   }
 }
+
+@keyframes project-back-rotate{
+  0% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
