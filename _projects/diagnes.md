@@ -8,5 +8,10 @@ tecs:
     - { img: electron, name: Electron}
     - { img: pouchdb, name: Pouchdb}
     - { img: jquery, name: jquery}
+destails:
+    - Pequeno de agendamente de consultas capaz de da suporte a consultórios a pequenos consultórios
+    - Trata-se de uma aplicação para desktop, desenvolvida utilizando-se o Electron.js
+    - Além do Electron, foram utilizados PounchDB, jQuery para ajudar nas interações com o DOM, além do HTML/CSS/JS
+    - Projeto desenvolvido durante aprimoramento de conhecimentos
+
 ---
-Sistema de gestão de clinicas hospitalares.
