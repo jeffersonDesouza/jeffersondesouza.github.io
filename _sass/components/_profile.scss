@@ -7,14 +7,12 @@
     @include respond(desktop) {
       font-size: 2rem;
     }
-    background: lightblue;
-    flex: 0 0 80%;
+    flex: 0 0 75%;
   }
   &__footer {
     @include abs-midle-center;
-    background: pink;
     justify-content: flex-start;
-    flex: 0 0 20%;
+    flex: 0 0 25%;
   }
   &__figure {
     display: flex;
