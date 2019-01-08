@@ -1,4 +1,5 @@
 ---
+order: 50
 layout: project
 title: Diagnes, Gestão de Pacientes
 img: assets/img/demos/diagnes-1x.png

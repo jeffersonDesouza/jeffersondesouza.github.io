@@ -1,6 +1,8 @@
 <section class="projects">
   <ul class="projects__list">
-    {% for project in site.projects %}
+    
+    {% assign projectsSorted = site.projects | sort: 'order' %}
+    {% for project in projectsSorted %}
     <li class="projects__list-item">
       <a href="{{project.url}}" class="project__link">
         {% include project.html content=project %}

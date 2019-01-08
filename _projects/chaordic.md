@@ -1,4 +1,5 @@
 ---
+order: 20
 layout: project
 title: Chaordic
 img: assets/img/demos/chaordic-1x.png
