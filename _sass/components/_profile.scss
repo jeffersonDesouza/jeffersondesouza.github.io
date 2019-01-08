@@ -4,7 +4,7 @@
   &__body {
     font-size: 1.75rem;
     @include abs-midle-center;
-    @include respond(desktop) {
+    @include respond(tab) {
       font-size: 2rem;
     }
     flex: 0 0 75%;
@@ -28,14 +28,14 @@
     &--home {
       font-size: 3rem;
       animation: profile-home-title .3s;
-      @include respond(desktop) {
+      @include respond(tab) {
         font-size: 3rem;
       }
     }
     &--project {
       font-size: 2rem;
       animation: profile-project-title .3s;
-      @include respond(desktop) {
+      @include respond(tab) {
         font-size: 2rem;
       }
     }
@@ -52,14 +52,14 @@
     &--home {
       font-size: 2rem;
       animation: profile-home-sub .3s;
-      @include respond(desktop) {
+      @include respond(tab) {
         font-size: 2rem;
       }
     }
     &--project {
       font-size: 2.5rem;
       animation: profile-project-sub .3s;
-      @include respond(desktop) {
+      @include respond(tab) {
         font-size: 1.5rem;
       }
     }
@@ -70,7 +70,7 @@
   }
   &__social-media {
     margin-bottom: 3rem;
-    @include respond(desktop) {
+    @include respond(tab) {
       padding-bottom: 10rem;
     }
   }
@@ -85,7 +85,7 @@
     }
   }
   &__projects-link-a {
-    @include respond(desktop) {
+    @include respond(tab) {
       display: none;
     }
   }

@@ -1,7 +1,7 @@
 .home-page {
   background-color: $color-secondary;
   min-height: 100vh;
-  @include respond(desktop) {
+  @include respond(tab) {
     display: flex;
   }
 }
@@ -9,7 +9,7 @@
 .header {
   background-color: $color-primary;
   color: $white;
-  @include respond(desktop) {
+  @include respond(tab) {
     flex: 1;
     position: relative;
     transition: all .3s ease-out;
@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    @include respond(desktop) {
+    @include respond(tab) {
       position: fixed;
       flex-direction: row;
       width: 33.33%;
@@ -33,13 +33,13 @@
 .projects {
   background-color: $color-primary-light;
   padding-top: 3rem;
-  @include respond(desktop) {
+  @include respond(tab) {
     flex: 2;
     display: flex;
     justify-content: center;
   }
   &__list {
-    @include respond(desktop) {
+    @include respond(tab) {
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;

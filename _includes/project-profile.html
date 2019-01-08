@@ -1,5 +1,5 @@
 <div class="profile">
-  <figure class="profile__figure ">
+  <figure class="profile__figure profile__figure--project-page sm-display-none">
     <a href="/">
       <img class="profile__avatar-img" src="../{{'assets/img/lg/avatar-sm.png'}}" alt="">
     </a>
@@ -14,10 +14,10 @@
       {{ site.subtitle }}
     </a>
   </p>
-  <div class="profile__social-media">
+  <div class="profile__social-media sm-display-none">
     {%- include social-media-nav.html -%}
   </div>
-  <footer class="profile__footer profile__footer--project ">
+  <footer class="profile__footer profile__footer--project sm-display-none">
     {{site.email}}
   </footer>
 </div>
