@@ -23,6 +23,7 @@
     text-align: center;
     color: $color-primary-mid;
     transition: all .3s;
+    margin-bottom: 3rem;
     &--home {
       font-size: 2rem;
       animation: profile-home-sub .3s;
@@ -32,5 +33,7 @@
       animation: profile-project-sub .3s;
     }
   }
- 
+  &__social-media {
+
+  }
 }
