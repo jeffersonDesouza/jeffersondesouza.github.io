@@ -2,8 +2,7 @@
   width: 30rem;
   height: 30rem;
   &:hover &__figure-img {
-    transform: scale(1.2);
-
+    transform: scale(1.05);
   }
   &__title {
     font-size: 2rem;
@@ -13,11 +12,8 @@
     height: 17.5rem;
     overflow: hidden;
   }
-  &__figure-img{
+  &__figure-img {
     transition: all .5s ease-out;
-    &:hover{
-      // transform: scale(1.2);
-    }
   }
   &__tecs {
     padding-top: 1rem;
@@ -33,7 +29,10 @@
     height: 3rem;
     width: 3rem;
     border-radius: 100%;
-    background: lightgray;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
   &__tec-name {
     font-size: 1.4rem;

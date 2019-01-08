@@ -8,7 +8,7 @@
     <li class="project__tecs-item" title="{{tec.name}}">
       <figure class="project__tec">
         <div class="project__tec-img">
-          <!-- <img class="project__tec-img" src="{{tec.img}}" alt="{{tec.name}}"> -->
+          {% include {{ tec.img | prepend: 'svg/' | append: '.svg' }} %}
         </div>
         <figcaption class="project__tec-name">
           {{tec.name}}
