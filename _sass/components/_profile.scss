@@ -9,17 +9,6 @@
       font-size: 2rem;
     }
   }
-  &__footer {
-    @include abs-midle-center;
-    justify-content: flex-start;
-    flex: 0 0 25%;
-    &--project {
-      display: none;
-      @include respond(tab) {
-        display: block;
-      }
-    }
-  }
   &__figure {
     display: flex;
     justify-content: center;
@@ -38,20 +27,15 @@
     margin-bottom: .5rem;
     text-align: center;
     &--home {
-      font-size: 3rem;
+      font-size: 2.5rem;
       @include respond(tab) {
         animation: profile-home-title .3s;
-        font-size: 2.5rem;
-      }
-      @include respond(tab-land) {
-        font-size: 3rem;
       }
     }
     &--project {
       font-size: 2rem;
       @include respond(tab) {
         animation: profile-project-title .3s;
-        font-size: 2rem;
       }
     }
     a {
@@ -68,14 +52,12 @@
       font-size: 2rem;
       @include respond(tab) {
         animation: profile-home-sub .3s;
-        font-size: 2rem;
       }
     }
     &--project {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       @include respond(tab) {
         animation: profile-project-sub .3s;
-        font-size: 1.5rem;
       }
     }
     a {
@@ -83,16 +65,33 @@
       font-size: inherit;
     }
   }
+  &__footer {
+    justify-content: flex-start;
+    flex: 0 0 25%;
+    &--project {
+      display: none;
+      @include respond(tab) {
+        display: flex;
+      }
+    }
+  }
   &__social-media {
     margin-bottom: 3rem;
-    display: none;
     @include respond(tab) {
-      margin-bottom: 0;
+      margin-top: 5rem;
       display: block;
     }
   }
   &__social-email {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    @include respond(tab) {
+      font-size: 1.4rem;
+    }
+    &--project {
+      @include respond(tab) {
+        font-size: 1.1rem;
+      }
+    }
   }
   &__projects-link {
     transform: rotateZ(270deg);
