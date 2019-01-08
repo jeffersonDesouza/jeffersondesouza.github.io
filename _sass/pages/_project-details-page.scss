@@ -1,0 +1,57 @@
+.project-page {
+  background-color: $color-secondary;
+  @include respond(tab) {
+    display: flex;
+    min-height: 100vh;
+  }
+  &__header {
+    color: $white;
+    @include respond(tab) {
+      animation: project-page-init-header .5s ease-out;
+      background-color: $color-primary;
+      display: flex;
+      flex: 0 0 25%;
+      justify-content: center;
+      padding-top: 2rem;
+      transition: all .3s ease-out;
+    }
+    @include respond(tab-land) {
+      flex: 0 0 20%;
+    }
+  }
+  &__header-info {
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    @include respond(tab) {
+      height: 90vh;
+      position: fixed;
+    }
+  }
+  &__back {
+    flex: 1;
+    align-self: stretch;
+    @include respond(tab) {
+      flex: 0;
+      align-self: unset;
+      animation: project-back-rotate .3s ease-out;
+    }
+    .icon {
+      font-size: 2rem;
+      color: $white;
+    }
+  }
+  &__profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__details {
+    flex: 0 0 75%;
+
+  }
+}

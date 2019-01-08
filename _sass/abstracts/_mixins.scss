@@ -12,6 +12,9 @@
     @if $breakpoint == big-phone {
         @media only screen and (min-width: 37.5em) { @content };    //600px
     }
+    @if $breakpoint==sm-tab {
+        @media only screen and (min-width: 41.875em) { @content }; //768px
+    }
     @if $breakpoint==tab {
         @media only screen and (min-width: 48em) { @content }; //768px
     }

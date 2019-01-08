@@ -4,20 +4,21 @@
   &__body {
     font-size: 1.75rem;
     @include abs-midle-center;
-    @include respond(desktop) {
+    flex: 0 0 75%;
+    @include respond(tab) {
       font-size: 2rem;
     }
-    flex: 0 0 75%;
-  }
-  &__footer {
-    @include abs-midle-center;
-    justify-content: flex-start;
-    flex: 0 0 25%;
   }
   &__figure {
     display: flex;
     justify-content: center;
     margin-bottom: 1.5rem;
+    &--project {
+      display: none;
+      @include respond(tab) {
+        display: flex;
+      }
+    }
   }
   &__avatar-img {
     border-radius: 100%;
@@ -26,17 +27,15 @@
     margin-bottom: .5rem;
     text-align: center;
     &--home {
-      font-size: 3rem;
-      animation: profile-home-title .3s;
-      @include respond(desktop) {
-        font-size: 3rem;
+      font-size: 2.5rem;
+      @include respond(tab) {
+        animation: profile-home-title .3s;
       }
     }
     &--project {
       font-size: 2rem;
-      animation: profile-project-title .3s;
-      @include respond(desktop) {
-        font-size: 2rem;
+      @include respond(tab) {
+        animation: profile-project-title .3s;
       }
     }
     a {
@@ -51,16 +50,14 @@
     margin-bottom: 3rem;
     &--home {
       font-size: 2rem;
-      animation: profile-home-sub .3s;
-      @include respond(desktop) {
-        font-size: 2rem;
+      @include respond(tab) {
+        animation: profile-home-sub .3s;
       }
     }
     &--project {
-      font-size: 2.5rem;
-      animation: profile-project-sub .3s;
-      @include respond(desktop) {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
+      @include respond(tab) {
+        animation: profile-project-sub .3s;
       }
     }
     a {
@@ -68,14 +65,33 @@
       font-size: inherit;
     }
   }
+  &__footer {
+    justify-content: flex-start;
+    flex: 0 0 25%;
+    &--project {
+      display: none;
+      @include respond(tab) {
+        display: flex;
+      }
+    }
+  }
   &__social-media {
     margin-bottom: 3rem;
-    @include respond(desktop) {
-      padding-bottom: 10rem;
+    @include respond(tab) {
+      margin-top: 5rem;
+      display: block;
     }
   }
   &__social-email {
-    font-size: 1.75rem;
+    font-size: 1rem;
+    @include respond(tab) {
+      font-size: 1.4rem;
+    }
+    &--project {
+      @include respond(tab) {
+        font-size: 1.1rem;
+      }
+    }
   }
   &__projects-link {
     transform: rotateZ(270deg);
@@ -85,7 +101,7 @@
     }
   }
   &__projects-link-a {
-    @include respond(desktop) {
+    @include respond(tab) {
       display: none;
     }
   }

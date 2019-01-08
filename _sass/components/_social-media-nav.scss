@@ -13,7 +13,7 @@
     &:link {
       color: $color-primary-mid;
       font-size: 4rem;
-      @include respond(desktop) {
+      @include respond(tab) {
         font-size: 2.5rem;
       }
     }

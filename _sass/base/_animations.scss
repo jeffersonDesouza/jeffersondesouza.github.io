@@ -21,19 +21,28 @@
 @keyframes project-page-init-header {
   0% {
     flex: 0 0 33.33%;
+   
   }
   100% {
-    flex: 0 0 15%;
+
+    @include respond(tab) {
+      flex: 0 0 25%;
+    }
+    @include respond(tab-land) {
+      flex: 0 0 20%;
+    }
+    @include respond(lap) {
+      flex: 0 0 15%;
+    }
   }
 }
 
 @keyframes profile-home-title {
   0% {
     font-size: 2rem;
-    
   }
   100% {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -48,7 +57,7 @@
 
 @keyframes profile-project-title {
   0% {
-    font-size: 3rem;
+    font-size: 2.5rem;    
   }
   100% {
     font-size: 2rem;
@@ -64,7 +73,7 @@
   }
 }
 
-@keyframes project-back-rotate{
+@keyframes project-back-rotate {
   0% {
     transform: rotateZ(90deg);
   }
